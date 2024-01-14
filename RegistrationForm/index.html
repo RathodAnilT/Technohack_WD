@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractive Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <form id="registrationForm">
+    <h2>Register</h2>
+
+    <div class="input-container">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <div class="error" id="usernameError"></div>
+    </div>
+
+    <div class="input-container">
+      <label for="emailContact">Email/Contact:</label>
+      <input type="text" id="emailContact" name="emailContact" placeholder="Enter your email or contact number" required>
+      <div class="error" id="emailContactError"></div>
+    </div>
+
+    <div class="input-container">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <div class="error" id="passwordError"></div>
+    </div>
+
+    <div class="button-container">
+      <button type="button" onclick="validateForm()">Register</button>
+      <button type="button" onclick="clearForm()">Clear Form</button>
+    </div>
+  </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
